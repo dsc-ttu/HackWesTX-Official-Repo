@@ -85,6 +85,7 @@ const Jumbotron = () => {
               display: "flex",
             }}
           >
+            {/*
             <Button
               disableRipple={false}
               href="https://www.townscript.com/e/hackwestx-fall-2023-424424"
@@ -104,6 +105,11 @@ const Jumbotron = () => {
             >
               REGISTER NOW!
             </Button>
+            */}
+
+            <button onclick="popup('hackwestx-fall-2023-424424');" class="tsbutton">
+              Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript>
+            <script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
           </Box>
         </Container>
       </Grid>
