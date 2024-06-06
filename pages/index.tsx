@@ -41,7 +41,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Home | HackWesTX</title>
+        <title>Home | HackWesTX V</title>
         <meta name="description" content="Home of the HackWesTX Hackathon" />
       </Head>
 
