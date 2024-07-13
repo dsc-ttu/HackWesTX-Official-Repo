@@ -2,9 +2,11 @@ import React from "react";
 import Floating_Nav from "../../components/ui/2024/Floating-Nav";
 import Image from "next/image";
 import BannerImage from "../../assets/2024-assets/banner.png"
+import {Poppins} from 'next/font/google'
 function Home_2024 (){
     return(
     <div className="flex flex-col justify-center w-full h-full gap-y-5">
+    <div className=" relative">
     <Image
     className=" rounded-b-3xl"
     src={BannerImage}
@@ -12,8 +14,23 @@ function Home_2024 (){
     width={1440}
     height={810}
     />
+    <div className="absolute inset-0 flex  justify-center items-center font-poppins font-semibold text-10xl leading-none text-blue-800">
+        HACKWESTX V
+    </div>
+    </div>
     <Floating_Nav/>
-    <div className="w-2 mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida mauris non felis tincidunt, nec ultrices dui lobortis. Vivamus ullamcorper semper lorem, nec porttitor nisl faucibus nec. Proin lacinia bibendum felis, id iaculis justo dapibus sed. Sed at lorem vitae ante mollis volutpat sit amet eget risus. Donec ut libero ut libero viverra molestie. Nam tincidunt fermentum urna eget convallis. Nullam sed efficitur ex, nec consectetur justo. Maecenas a arcu sit amet eros maximus dictum.
+    <div className=" mt-4 flex flex-col justify-center text-center font-light text-3xl w-3/4 gap-6 mx-auto">
+        <div>
+        HackWes<div className="inline text-yellow-700">TX</div> V is Texas Tech’s <div className="inline text-yellow-700">fifth</div> student-run hackathon.
+        </div>
+        <div>
+        A hackathon is an event where participants, often working in teams, engage in <div className="inline text-yellow-700">intensive collaboration</div> to create innovative solutions to <div className="inline text-yellow-700">real world problems</div> within a limited time frame.
+        </div>
+        <div>
+        HackWesTX is a <div className="inline text-yellow-700">24-hour</div> event.
+        </div>
+    </div>
+    <div className="w-2 mt-20" id="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida mauris non felis tincidunt, nec ultrices dui lobortis. Vivamus ullamcorper semper lorem, nec porttitor nisl faucibus nec. Proin lacinia bibendum felis, id iaculis justo dapibus sed. Sed at lorem vitae ante mollis volutpat sit amet eget risus. Donec ut libero ut libero viverra molestie. Nam tincidunt fermentum urna eget convallis. Nullam sed efficitur ex, nec consectetur justo. Maecenas a arcu sit amet eros maximus dictum.
 
 Pellentesque eleifend, nisi vel vehicula aliquam, quam purus ultrices elit, sit amet pellentesque nunc nisl quis mi. In hac habitasse platea dictumst. Ut eleifend ligula ac justo tincidunt, vel vestibulum quam dictum. Ut ullamcorper velit ac ultrices interdum. Aenean non est nisl. Maecenas nec feugiat quam. Fusce aliquam, nisl at suscipit interdum, velit felis gravida nunc, id fermentum ex felis sit amet sem.
 

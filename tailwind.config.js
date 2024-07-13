@@ -7,7 +7,12 @@ module.exports = {
     // Add other paths as needed for Tailwind to scan for classes
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '10xl': '10rem', // Example custom size
+        '11xl': '11rem', // Example custom size
+        },
+      },
   },
   plugins: [],
 };
