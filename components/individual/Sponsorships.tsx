@@ -5,15 +5,15 @@ import { useDownloadURL } from "react-firebase-hooks/storage";
 import flask from "../../assets/icons/flask.svg";
 import Megaphone from "../../assets/icons/megaphone.svg";
 import Recruit from "../../assets/icons/recruit.svg";
-import { fbase } from "../../lib/Firebase";
+// import { fbase } from "../../lib/Firebase";
 import styles from "../../styles/Home.module.css";
 
-const storage = getStorage(fbase);
+// const storage = getStorage(fbase);
 
 const Sponsorships = () => {
-  const [value] = useDownloadURL(
-    storageRef(storage, `public/HWT_Sponsorship_Packet.pdf`)
-  );
+  // const [value] = useDownloadURL(
+  //   storageRef(storage, `public/HWT_Sponsorship_Packet.pdf`)
+  // );
   const theme = useTheme();
 
   return (
@@ -61,12 +61,9 @@ const Sponsorships = () => {
               mx: "auto",
               borderRadius: 10,
             }}
-            href={value ? value : ""}
-            disabled={!value}
-            target="_blank"
-            referrerPolicy="no-referrer"
+            href= "mailto:contact@hackwestx.tech"
           >
-            ✨ Sponsor Packet ✨
+            ✨ Contact Us ✨
           </Button>
         </Box>
       </Grid>

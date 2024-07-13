@@ -1,3 +1,11 @@
+/* styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables and Styles */
+
 :root {
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -59,12 +67,14 @@
   }
 }
 
+/* Reset styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Body and general styles */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -75,13 +85,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Links */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
+  /* Additional dark mode styles if needed */
 }

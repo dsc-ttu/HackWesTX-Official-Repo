@@ -5,6 +5,8 @@ import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React, { ReactElement, ReactNode } from "react";
 import Layout from "../components/Layout";
+import '../styles/globals.css';
+import {Poppins} from 'next/font/google'
 /**
  * @remarks Setting type for pages with a layout
  * @remarks Type for properties of a page with a layout
@@ -27,6 +29,8 @@ type AppPropsWithLayout = AppProps & {
  * @link https://mui.com/
  */
 
+
+const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600']})
 const customeTheme = {
   palette: {
     primary: {
@@ -75,17 +79,29 @@ let theme = createTheme(customeTheme);
  * @function MyApp
  * @fileoverview Entry point of the application
  */
+type NextPageWithLayout = AppProps['Component'] & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  const getLayout = Component.getLayout || ((page: ReactNode) => <Layout>{page}</Layout>);
+
   return (
     <React.StrictMode>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <main className={poppins.className}>
+        {getLayout(<Component {...pageProps} />)}
+        </main>
       </ThemeProvider>
     </React.StrictMode>
   );
 }
 
 export default MyApp;
+
+
