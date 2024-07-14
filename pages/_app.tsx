@@ -7,6 +7,11 @@ import React, { ReactElement, ReactNode } from "react";
 import Layout from "../components/Layout";
 import '../styles/globals.css';
 import {Poppins} from 'next/font/google'
+import { MantineProvider } from "@mantine/core";
+import { Man } from "@mui/icons-material";
+import 'tailwindcss/tailwind.css'; 
+import '@mantine/core/styles.css'
+
 /**
  * @remarks Setting type for pages with a layout
  * @remarks Type for properties of a page with a layout
@@ -95,7 +100,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <main className={poppins.className}>
+          <MantineProvider>
         {getLayout(<Component {...pageProps} />)}
+        </MantineProvider>
         </main>
       </ThemeProvider>
     </React.StrictMode>
