@@ -8,6 +8,11 @@ import Link from "next/link";
 import { Divider } from "@mantine/core";
 import SectionHeader from "../../components/ui/2024/sectionHeader";
 import Footer from "../../components/ui/2024/NewFooter";
+import NewCountdown from "../../components/ui/2024/NewCountdown"
+import { LocationCity, Place} from "@mui/icons-material";
+import ScheduleBloc from "../../components/ui/2024/ScheduleBloc";
+import OurTeam from "../../components/individual/OurTeam";
+
 
 function Home_2024 (){
     return(
@@ -37,6 +42,7 @@ function Home_2024 (){
         HackWesTX is a <div className="inline text-yellow-700">24-hour</div> event.
         </div>
     </div>
+    <ScheduleBloc />
     
     <div className="flex flex-col mx-auto w-4/5 my-8">
         <SectionHeader header='FAQ' />
@@ -46,7 +52,7 @@ function Home_2024 (){
         <FrequentQuestions/>
     </div>
     <Footer/>
-</div>
+</div>  
     )
 };
 
