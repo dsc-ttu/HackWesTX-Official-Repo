@@ -2,8 +2,12 @@ import ForumIcon from "@mui/icons-material/Forum";
 import MailIcon from "@mui/icons-material/Mail";
 import SchoolIcon from "@mui/icons-material/School";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Instagram } from "@mui/icons-material";
 import { Grid, Stack, Typography, useTheme } from "@mui/material";
-import IconLink from "./individual/IconLink";
+import IconLink from "../../individual/IconLink";
+import Logo from "../../../assets/2024-assets/HACKWESTX LOGO HIGH RES.png"
+import Image from "next/image";
+import { Poppins } from "next/font/google";
 
 /**
  * @fileoverview Social plugs and goodbyes w peace and love
@@ -17,59 +21,52 @@ const Footer = () => {
   );
 
   return (
-    <Grid
-      container
-      component="footer"
-      justifyContent="center"
-      py={10}
-      sx={{
-        backgroundColor: theme.palette.primary.dark,
-        color: contrastColor,
-        boxShadow:
-          "rgba(50, 50, 93, 0.1) 0px 3px 30px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset",
-      }}
-    >
-      <Grid item xs={5} my={{ md: "auto", xs: 1 }}>
-        <Typography variant="h5" textAlign="center" fontFamily="Bungee">
-          Let&apos;s Chat!
-        </Typography>
-        <Typography
-          my={2}
-          display="flex"
+    <div>
+    <div className="w-full rounded-lg flex flex-row bg-gray-900 bg-opacity-15 p-8 justify-items-center justify-stretch">
+    <Image
+    src={Logo}
+    height={400}
+    width={418}
+    className=" rounded-3xl"
+    alt="HackWesTX Logo"
+    />
+    <div className="flex flex-col justify-center content-center mx-auto w-fit justify-items-center">
+    <div className=" font-poppins text-center ">
+       <div className=" font-normal text-3xl text-center mb-5">Celebrating 5 years of HackWesTX!</div> 
+          <div className=" text-xl mb-3">Made with <div className=" inline text-yellow-700 mx-1">   ❤   </div> by HackWesTX Team</div>
+    </div>
+    <Stack
           justifyContent="space-evenly"
-          textAlign={{ xs: "center", md: undefined }}
-        >
-          Made with ❤ by HackWesTX Team
-        </Typography>
-        <Stack
-          justifyContent="space-between"
           direction="row"
-          spacing={0}
+          className="text-black"
+          spacing={3}
+          width={600}
           mt={2}
         >
           <IconLink
             href="https://discord.com/invite/Y9wUhS5cKp"
             child={<ForumIcon />}
-            color={contrastColor}
+            color='#000000'
           />
           <IconLink
             href="https://twitter.com/HWTXOfficial"
-            child={<TwitterIcon />}
-            color={contrastColor}
+            child={<Instagram />}
+            color='#000000'
           />
           <IconLink
             href="https://www.depts.ttu.edu/cs/"
             child={<SchoolIcon />}
-            color={contrastColor}
+            color='#000000'
           />
           <IconLink
             href={`mailto:contact@hackwestx.tech?subject=Quick%20HackWesTX%20Question`}
             child={<MailIcon />}
-            color={contrastColor}
+            color='#000000'
           />
         </Stack>
-      </Grid>
-    </Grid>
+        </div>
+    </div>
+    </div>
   );
 };
 
