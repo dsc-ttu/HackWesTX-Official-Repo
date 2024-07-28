@@ -119,7 +119,7 @@ const HomePage = () => {
               >
                 HackWesTX IV is Texas Tech University&apos;s fourth student-run
                 hackathon! This year, the hackathon will start Saturday,
-                September 16th and end Sunday, September 17th. The hackathon will
+                September 14th and end Sunday, September 15th. The hackathon will
                 last 24 hours total!
               </Typography>
             </CardContent>
