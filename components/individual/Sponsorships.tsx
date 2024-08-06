@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
-import { getStorage, ref as storageRef } from "firebase/storage";
+// import { getStorage, ref as storageRef } from "firebase/storage";
 import Image from "next/image";
 import { useDownloadURL } from "react-firebase-hooks/storage";
 import flask from "../../assets/icons/flask.svg";
@@ -61,7 +61,11 @@ const Sponsorships = () => {
               mx: "auto",
               borderRadius: 10,
             }}
-            href= "mailto:contact@hackwestx.tech"
+
+            href="mailto:contact@hackwestx.tech"
+            target="_blank"
+            referrerPolicy="no-referrer"
+
           >
             ✨ Contact Us ✨
           </Button>

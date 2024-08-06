@@ -57,7 +57,7 @@ const HWTCountdown = () => {
 
   return (
     <Countdown
-      date={new Date("September 16, 2023 08:00:00")}
+      date={new Date("September 14, 2024 08:00:00")}
       renderer={renderer}
     />
   );
