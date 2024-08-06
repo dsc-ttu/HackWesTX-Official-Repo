@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Logo from "../../assets/icons/screen.svg";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 
 const Jumbotron = () => {
   const theme = useTheme();
@@ -69,7 +70,7 @@ const Jumbotron = () => {
             mt={{ md: 4 }}
             className={styles.glitch}
           >
-            September 16th - September 17th
+            September 14th - September 15th
           </Typography>
           <Typography
             variant="h5"
@@ -103,7 +104,7 @@ const Jumbotron = () => {
                 }
               }}
             >
-              Registration Closed
+             <Link href={'/2024'}>Visit HackWesTX 2024 Website</Link> 
             </Button>
           </Box>
         </Container>
