@@ -153,7 +153,7 @@ const HomePage = () => {
                   overflowX: "none",
                 }}
               >
-                We are developers who encourage each other to do better.
+                We are developers who encourage each other to do bette!
                 It&apos;s not just about writing code or programming hardware,
                 it&apos;s about making a positive impact in our community. We
                 want to empower the next generation of learners that will change
