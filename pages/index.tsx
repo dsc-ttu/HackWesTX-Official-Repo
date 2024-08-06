@@ -119,7 +119,7 @@ const HomePage = () => {
               >
                 HackWesTX IV is Texas Tech University&apos;s fourth student-run
                 hackathon! This year, the hackathon will start Saturday,
-                September 16th and end Sunday, September 17th. The hackathon will
+                September 14th and end Sunday, September 15th. The hackathon will
                 last 24 hours total!
               </Typography>
             </CardContent>
@@ -153,7 +153,7 @@ const HomePage = () => {
                   overflowX: "none",
                 }}
               >
-                We are developers who encourage each other to do better.
+                We are developers who encourage each other to do bette!
                 It&apos;s not just about writing code or programming hardware,
                 it&apos;s about making a positive impact in our community. We
                 want to empower the next generation of learners that will change
@@ -184,7 +184,7 @@ const HomePage = () => {
             my="auto"
             className={styles.glitch}
           >
-            Sponsored By
+            Our Past Sponsors
           </Typography>
         </Grid>
         <Stack mx="auto">
@@ -391,7 +391,7 @@ const HomePage = () => {
             <FAQ heading={question.heading} body={question.body} key={question.heading} />
           ))}
         </Grid>
-        <OurTeam />
+        {/* <OurTeam /> */}
       </Grid>
     </>
   );
