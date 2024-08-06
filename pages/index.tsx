@@ -184,7 +184,7 @@ const HomePage = () => {
             my="auto"
             className={styles.glitch}
           >
-            Sponsored By
+            Our Past Sponsors
           </Typography>
         </Grid>
         <Stack mx="auto">
@@ -391,7 +391,7 @@ const HomePage = () => {
             <FAQ heading={question.heading} body={question.body} key={question.heading} />
           ))}
         </Grid>
-        <OurTeam />
+        {/* <OurTeam /> */}
       </Grid>
     </>
   );

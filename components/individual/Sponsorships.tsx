@@ -5,7 +5,7 @@ import { useDownloadURL } from "react-firebase-hooks/storage";
 import flask from "../../assets/icons/flask.svg";
 import Megaphone from "../../assets/icons/megaphone.svg";
 import Recruit from "../../assets/icons/recruit.svg";
-import { fbase } from "../../lib/Firebase";
+// import { fbase } from "../../lib/Firebase";
 import styles from "../../styles/Home.module.css";
 
 // const storage = getStorage(fbase);
@@ -61,9 +61,11 @@ const Sponsorships = () => {
               mx: "auto",
               borderRadius: 10,
             }}
+
             href="mailto:contact@hackwestx.tech"
             target="_blank"
             referrerPolicy="no-referrer"
+
           >
             ✨ Contact Us ✨
           </Button>

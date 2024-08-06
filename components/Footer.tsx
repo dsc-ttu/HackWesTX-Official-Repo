@@ -39,7 +39,7 @@ const Footer = () => {
           justifyContent="space-evenly"
           textAlign={{ xs: "center", md: undefined }}
         >
-          Made with ❤ by HackWesTX Staff
+          Made with ❤ by HackWesTX Team
         </Typography>
         <Stack
           justifyContent="space-between"

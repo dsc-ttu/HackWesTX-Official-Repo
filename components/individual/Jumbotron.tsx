@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Logo from "../../assets/icons/screen.svg";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 
 const Jumbotron = () => {
   const theme = useTheme();
@@ -103,7 +104,8 @@ const Jumbotron = () => {
                 }
               }}
             >
-              Registration Opening Soon
+             <Link href={'/2024'}>Visit HackWesTX 2024 Website</Link> 
+
             </Button>
           </Box>
         </Container>
