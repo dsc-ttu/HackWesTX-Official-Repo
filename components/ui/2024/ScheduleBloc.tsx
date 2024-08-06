@@ -6,9 +6,14 @@ import SectionHeader from "./sectionHeader";
 
 import NewCountdown from "./NewCountdown"
 import { LocationCity, Place} from "@mui/icons-material";
+import { Grid } from "@mui/material";
 
 export default function ScheduleBloc(){
     return(
+        <Grid 
+        item
+        xs={12}
+        >
         <div>
         <SectionHeader  header="SCHEDULE" />
         <div className="text-poppins text-center text-5xl text-black mt-8 font-light">September 14th and 15th 2024</div>
@@ -16,5 +21,6 @@ export default function ScheduleBloc(){
         <NewCountdown/>
         
     </div>
+    </Grid>
     )
 }

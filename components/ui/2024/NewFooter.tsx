@@ -21,7 +21,8 @@ const Footer = () => {
   );
 
   return (
-    <div>
+    <Grid item xs={12} overflow='noclip'>
+    <div className="w-full">
     <div className="w-full rounded-lg flex flex-row bg-gray-900 bg-opacity-15 p-8 justify-items-center justify-stretch">
     <Image
     src={Logo}
@@ -67,6 +68,7 @@ const Footer = () => {
         </div>
     </div>
     </div>
+    </Grid>
   );
 };
 
