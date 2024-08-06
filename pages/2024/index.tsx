@@ -12,22 +12,32 @@ import NewCountdown from "../../components/ui/2024/NewCountdown"
 import { LocationCity, Place} from "@mui/icons-material";
 import ScheduleBloc from "../../components/ui/2024/ScheduleBloc";
 import OurTeam from "../../components/individual/OurTeam";
+import { Grid } from "@mui/material";
 
 
 function Home_2024 (){
     return(
+        <Grid container overflow='clip'>
     <div className="flex flex-col justify-center w-full h-full gap-y-5">
-    <div className=" relative" id="home">
+    <div className=" relative w-full flex justify-center" id="home">
+    <Grid
+        item
+        xs={12}
+    >
     <Image
-    className=" rounded-b-3xl"
+    className=" rounded-b-3xl w-full min-w-fit "
+    layout="responsive"
     src={BannerImage}
     alt='banner'
     width={1440}
     height={810}
     />
-    <div className="absolute inset-0 flex  justify-center items-center font-poppins font-semibold text-10xl leading-none text-blue-800">
-        HACKWESTX V
-    </div>
+    <div className="absolute inset-0 flex  justify-center items-center font-poppins font-semibold leading-none text-blue-800 w-full">
+        <div className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-10xl leading-none">
+          HACKWESTX V
+        </div>
+    </div></Grid>
+    
     {/* <div className="absolute justify-center content-center inset-0 flex font-poppins font-semibold text-5xl leading-none text-blue-800">September 14th and 15th 2024</div> */}
     </div>
     <Floating_Nav/>
@@ -42,7 +52,10 @@ function Home_2024 (){
         HackWesTX is a <div className="inline text-yellow-700">24-hour</div> event.
         </div>
     </div>
+    <Grid item xs={12} mt={10} px="auto">
     <ScheduleBloc />
+    </Grid>
+   
     
     <div className="flex flex-col mx-auto w-4/5 my-8">
         <SectionHeader header='FAQ' />
@@ -53,6 +66,7 @@ function Home_2024 (){
     </div>
     <Footer/>
 </div>  
+</Grid>
     )
 };
 
