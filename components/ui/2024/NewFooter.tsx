@@ -5,7 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { Instagram } from "@mui/icons-material";
 import { Grid, Stack, Typography, useTheme } from "@mui/material";
 import IconLink from "../../individual/IconLink";
-import Logo from "../../../assets/2024-assets/HACKWESTX LOGO HIGH RES.png"
+import Logo from "../../../assets/2024-assets/logo.png"
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 
