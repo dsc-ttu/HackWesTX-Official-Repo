@@ -19,12 +19,7 @@ import '@mantine/core/styles.css'
  * @remarks Setting type for pages with a layout
  * @type
  */
-type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode;
-};
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
-};
+
 
 /**
  * Project Theme
