@@ -32,7 +32,7 @@ const FAQ = (props: FAQ) => {
           >
             {props.body}{" "}
             {props.heading === "Guidelines" ? (
-              <Link href="http://mlh.io/code-of-conduct">
+              <Link href="http://mlh.io/code-of-conduct" className=" text-blue-600">
                 MLH Code of Conduct.
               </Link>
             ) : undefined}
