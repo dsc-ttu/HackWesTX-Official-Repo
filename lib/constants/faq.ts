@@ -67,7 +67,7 @@ const faqNew = [
   },
   {
     value: "How long does the hackathon last?",
-    description: "The hackathon typically lasts for [duration].",
+    description: "The hackathon typically lasts for 24 hours.",
     icon: ""
   },
   {
@@ -77,7 +77,7 @@ const faqNew = [
   },
   {
     value: "Is there a theme for this hackathon?",
-    description: "Yes, the theme for HackWesTX is [theme]. It's recommended to align your project with this theme.",
+    description: "Yes, the theme for HackWesTX is Wild West. It's recommended to align your project with this theme.",
     icon: ""
   },
   {
@@ -92,7 +92,7 @@ const faqNew = [
   },
   {
     value: "How are projects judged?",
-    description: "Projects are judged based on [criteria]. Detailed judging criteria will be provided closer to the event.",
+    description: "Projects are judged based on a predetermined ruberic",
     icon: ""
   }
   // Add more questions as needed
