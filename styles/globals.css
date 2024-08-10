@@ -95,7 +95,46 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    scroll-behavior: smooth;
+    scrollbar-color: black;
   }
 
   /* Additional dark mode styles if needed */
 }
+
+/* Webkit browsers */
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;  /* Adjust the width of the scrollbar */
+  height: 12px; /* Adjust the height of the scrollbar if it's horizontal */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* Track background color */
+  border-radius: 10px;  /* Rounded corners for the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888;  /* Handle color */
+  border-radius: 6px;  /* Fully rounded corners for the handle */
+  border: 3px solid #f1f1f1;  /* Creates a padding effect around the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;  /* Darker color when hovering over the handle */
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;  /* Thin scrollbar width */
+  scrollbar-color: #888 #f1f1f1;  /* Thumb color and track color */
+}
+
+/* Optional: Add more control over scrollbar thumb in Firefox */
+::-moz-scrollbar-thumb {
+  border-radius: 6px;  /* Rounded corners for the thumb */
+}
+
