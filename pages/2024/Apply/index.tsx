@@ -12,7 +12,7 @@ const RegistrationPage = () => {
                         <div className="inline text-yellow-700">TX</div> V.
                     </div>
                     <div className="text-3xl">
-                        Reload the page if you don't see anything.
+                        Reload the page if you do not see anything.
                         Click here to go <Link href={'/2024'} className="inline text-yellow-700">back.</Link></div>
                 </div>
 
