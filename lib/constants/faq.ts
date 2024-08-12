@@ -94,7 +94,21 @@ const faqNew = [
     value: "How are projects judged?",
     description: "Projects are judged based on a predetermined ruberic",
     icon: ""
-  }
+  },
+  {
+    value: "What are the rules?",
+    description: "You can read the rules here",
+    link: "https://drive.google.com/file/d/1YGs6yog6DoscVEoYnylkxPMQSBE9KWIr/view?usp=drive_link",
+    linkText: "HackWesTX Rules and Code of Conduct",
+    icon: ""
+  },
+  {
+    value: "MLH Code of Conduct",
+    description: "You can read the MLH Code of Conduct Here.",
+    link: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+    linkText: "MLH Code of Conduct",
+    icon: ""
+  },
   // Add more questions as needed
 ];
 

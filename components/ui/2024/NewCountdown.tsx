@@ -11,7 +11,7 @@ const HWTCountdown = () => {
           spacing={{ xs: 1, sm: 2, md: 3, lg: 4 }}  // Responsive spacing
           alignItems="center"
           justifyContent="center"
-          color="#1e40af"
+          color="#000000"
           my={4}
           sx={{ width: '100%', textAlign: 'center' }}
         >
