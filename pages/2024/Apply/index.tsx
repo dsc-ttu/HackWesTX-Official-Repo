@@ -1,19 +1,22 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import Link from "next/link";
+import { Divider } from "@mantine/core";
 
 const RegistrationPage = () => {
     return (
         <Grid container>
             <div className="flex flex-col justify-center w-full h-full gap-y-5">
                 <div className="my-4 flex flex-col justify-center text-center font-light text-4xl w-3/4 gap-6 mx-auto">
-                    <div>
+                    <div className=" text-6xl">
                         Register for HackWes
                         <div className="inline text-yellow-700">TX</div> V.
                     </div>
+                    <Divider size='sm' className=" mb-8" />
                     <div className="text-3xl">
                         Reload the page if you do not see anything.
                         Click here to go <Link href={'/2024'} className="inline text-yellow-700">back.</Link></div>
+                    <div>We accept applications on a rolling basis, completing the application does not guranntee you a spot. </div>
                 </div>
 
                 {/* Embed the Townscript iframe */}
