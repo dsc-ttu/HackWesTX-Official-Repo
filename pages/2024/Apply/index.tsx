@@ -11,7 +11,9 @@ const RegistrationPage = () => {
                         Register for HackWes
                         <div className="inline text-yellow-700">TX</div> V.
                     </div>
-                    <div className="text-3xl">Click here to go <Link href={'/2024'} className="inline text-yellow-700">back.</Link></div>
+                    <div className="text-3xl">
+                        Reload the page if you don't see anything.
+                        Click here to go <Link href={'/2024'} className="inline text-yellow-700">back.</Link></div>
                 </div>
 
                 {/* Embed the Townscript iframe */}
