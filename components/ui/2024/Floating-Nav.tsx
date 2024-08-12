@@ -9,7 +9,7 @@ export default function Floating_Nav() {
     };
 
     return (
-        <div className="relative">
+        <div className="relative z-50">
             {/* Burger Icon Button for smaller screens */}
             <div className="fixed top-8 left-4 z-50 md:hidden">
                 <button

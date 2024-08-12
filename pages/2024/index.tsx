@@ -9,6 +9,7 @@ import SectionHeader from "../../components/ui/2024/sectionHeader";
 import Footer from "../../components/ui/2024/NewFooter";
 import NewCountdown from "../../components/ui/2024/NewCountdown";
 import ScheduleBloc from "../../components/ui/2024/ScheduleBloc";
+import NewTeam from "../../components/ui/2024/NewTeam"
 import { Grid } from "@mui/material";
 
 function Home_2024() {
@@ -49,8 +50,8 @@ function Home_2024() {
                             width={1440}
                             height={810}
                         />
-                        <div className="absolute inset-0 flex justify-center items-center font-poppins font-semibold leading-none text-blue-800 w-full">
-                            <div className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-10xl leading-none">
+                        <div className="absolute inset-0 flex justify-center items-center font-poppins font-semibold text-white w-full ">
+                            <div className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-10xl leading-none border-2 backdrop-saturate-200 backdrop-brightness-50 brightness-100 px-6">
                                 HACKWESTX V
                             </div>
                         </div>
@@ -80,6 +81,10 @@ function Home_2024() {
                         </Link>
                     </div>
                     <FrequentQuestions />
+                </div>
+                <div className="flex flex-col mx-auto w-4/5 my-8">
+                    <SectionHeader header="Our Team" />
+                    <NewTeam/>
                 </div>
                 <Footer />
                 {showButton && (
