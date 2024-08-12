@@ -20,7 +20,7 @@ export default function Navlinks() {
                     href={link.href}
                     className={clsx(
                         'flex items-center justify-center h-12 w-full md:w-32 p-2 border-2 rounded-lg text-center font-light transition-colors',
-                        { 'bg-slate-800 text-white border-gray-500 hover:border-white': link.name === 'Apply' },
+                        { 'bg-slate-800 text-white border-white': link.name === 'Apply' },
                         { 'bg-slate-800 text-white border-gray-500 hover:border-white': link.name !== 'Apply' }
                     )}
                 >
