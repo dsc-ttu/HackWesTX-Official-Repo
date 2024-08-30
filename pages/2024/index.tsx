@@ -11,6 +11,7 @@ import NewCountdown from "../../components/ui/2024/NewCountdown";
 import ScheduleBloc from "../../components/ui/2024/ScheduleBloc";
 import NewTeam from "../../components/ui/2024/NewTeam"
 import { Grid } from "@mui/material";
+import SponsorBlock from "../../components/ui/2024/SponsorBlock";
 
 function Home_2024() {
     const [showButton, setShowButton] = useState(false);
@@ -72,8 +73,10 @@ function Home_2024() {
                 <Grid item xs={12} mt={10} px="auto">
                     <ScheduleBloc />
                 </Grid>
+                <SponsorBlock/>
+                <SectionHeader header="FAQ" />
                 <div className="flex flex-col mx-auto w-4/5 my-8">
-                    <SectionHeader header="FAQ" />
+                    
                     <div className="text-center font-light text-3xl w-3/4 gap-6 mx-auto my-8">
                         For any additional questions{" "}
                         <Link className="text-yellow-700 m-0 p-0" href={"mailto:contact@hackwestx.tech"}>

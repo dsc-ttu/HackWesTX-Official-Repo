@@ -9,6 +9,8 @@ import tanveer from "../../assets/2024-assets/tanveer.png"
 import janice from "../../assets/2024-assets/janice.png"
 import parth from "../../assets/2024-assets/parth.png"
 import medhawi from "../../assets/2024-assets/medhavi.png"
+import nhu from "../../assets/2024-assets/nue.png"
+import advitya from "../../assets/2024-assets/advitya.png"
 
 export const team2024FallHWT = [
     {
@@ -54,6 +56,12 @@ export const team2024FallHWT = [
       avatarSrc: parth,
     },
     {
+      name: "Janice Kennedy",
+      role: "Marketing",
+      websiteUrl: undefined,
+      avatarSrc: janice,
+    },
+    {
       name: "Luisa Quintero",
       role: "Sponsorship",
       websiteUrl: "https://www.linkedin.com/in/luisa-quintero-990b2a258/",
@@ -71,10 +79,17 @@ export const team2024FallHWT = [
         websiteUrl: "https://www.linkedin.com/in/medhawi-niroula-03b07121a/",
         avatarSrc: medhawi,
       },
-    {
-        name: "Janice Kennedy",
-        role: "Marketing",
-        websiteUrl: undefined,
-        avatarSrc: janice,
+      {
+        name: "Nhu Le",
+        role: "Sponsorship",
+        websiteUrl: "https://www.linkedin.com/in/nhu-le-9179972a6/",
+        avatarSrc: nhu,
       },
+      {
+        name: "Advitya Giakwad",
+        role: "Sponsorship",
+        websiteUrl: "https://www.linkedin.com/in/advitiya-gaikwad-377424224/",
+        avatarSrc: advitya,
+      },
+
   ];
